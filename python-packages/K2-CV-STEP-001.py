@@ -3,7 +3,7 @@ import omni.usd
 
 stage = omni.usd.get_context().get_stage()
 
-belt_path = "/World/A_900023_INT_00_16_JUL_25_1/tn__A900023INT0016JUL251_lT8CFIMq0/Plane"
+belt_path = "/World/A_900023_INT_00_16_JUL_25_1/tn__A900023INT0016JUL251_lT8CFIMq0/Conveyor/Plane"
 belt_prim = stage.GetPrimAtPath(belt_path)
 
 if not belt_prim.IsValid():
@@ -18,6 +18,6 @@ rigid_body = UsdPhysics.RigidBodyAPI.Apply(belt_prim)
 rigid_body.CreateKinematicEnabledAttr(True)
 
 surface_velocity = PhysxSchema.PhysxSurfaceVelocityAPI.Apply(belt_prim)
-surface_velocity.CreateSurfaceVelocityAttr(Gf.Vec3f(0.5, 0.0, 0.0))  # +X, 0.5 m/s
+surface_velocity.CreateSurfaceVelocityAttr(Gf.Vec3f(0.2, 0.0, 0.0))  # +X, 0.5 m/s
 
 print("Applied surface velocity to:", belt_path)
