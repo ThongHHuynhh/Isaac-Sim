@@ -7,16 +7,32 @@ from isaacsim.core.prims import SingleArticulation
 from isaacsim.core.utils.types import ArticulationAction
 import omni.kit.app
 
-#Initialize robot
-robot = SingleArticulation(
-    prim_path="/World/abb_irb1200_5_90/root_joint",
-    name="abb"
-)
-robot.initialize()
+
 
 latest_joints_deg = None
 lock = threading.Lock()
-running = True
+running = False
+robot = None
+thread = None
+
+
+#Isacc sim updates
+smoothed_joints_rad = None
+alpha = 0.18
+
+def start_tcp_bridge():
+    global running, robot, thread
+    robot = SingleArticulation(
+        prim_path="/World/abb_irb1200_5_90/root_joint",
+        name="abb"
+    )
+    robot.initialize()
+    running = True
+    thread = threading.Thread(target=tcp_server, daemon=True)
+    thread.start()
+
+    print("[INFO] TCP bridge started")
+    
 
 def tcp_server():
     global latest_joints_deg, running
@@ -26,7 +42,7 @@ def tcp_server():
     server.bind(("0.0.0.0", 5000))
     server.listen(1)
 
-    print("Waiting for RobotStudio bridge...")
+    print("[UINFO] Waiting for RobotStudio bridge...")
     conn, addr = server.accept()
     # Apply specifically for TCP, TCP_NODELAY = 1 -> send directly, dont wait
     conn.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY,1)
@@ -52,16 +68,14 @@ def tcp_server():
                     latest_joints_deg = joints
 
             except Exception as e:
-                print("JSON error:", e)
+                print("[ERROR] JSON error:", e)
 
     conn.close()
     server.close()
 
-#Isacc sim updates
-smoothed_joints_rad = None
-alpha = 0.18
 
-def on_update(e):
+
+def update_tcp_bridge():
     global latest_joints_deg, smoothed_joints_rad
 
     with lock:
@@ -83,12 +97,7 @@ def on_update(e):
             )
         )
 
-thread = threading.Thread(target=tcp_server, daemon=True)
-thread.start()
-
-sub = omni.kit.app.get_app().get_update_event_stream().create_subscription_to_pop(
-    on_update,
-    name="robotstudio_to_isaac_joint_stream"
-)
-
-print("Isaac TCP listener running.")
+def stop_tcp_bridge():
+    global running
+    running = False
+    print("[UINFO] TCP bridge stopped")

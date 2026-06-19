@@ -1,10 +1,7 @@
 import asyncio
-from pxr import UsdGeom, Gf
+from pxr import UsdGeom, Gf, Sdf
 import omni.usd
 import omni.timeline
-
-stage = omni.usd.get_context().get_stage()
-timeline = omni.timeline.get_timeline_interface()
 
 PRODUCTS = [
     f"/World/Products/Bagg_0{i}"
@@ -16,6 +13,13 @@ DELAY_SECONDS = 3.0
 
 original_positions = {}
 
+def get_stage():
+    return omni.usd.get_context().get_stage()
+
+
+def get_prim(stage, path):
+    return stage.GetPrimAtPath(Sdf.Path(path))
+
 
 def get_translate_op(xform):
     for op in xform.GetOrderedXformOps():
@@ -25,8 +29,10 @@ def get_translate_op(xform):
 
 
 def save_original_positions():
+    stage = get_stage()
+
     for path in PRODUCTS:
-        prim = stage.GetPrimAtPath(path)
+        prim = get_prim(stage, path)
         if prim.IsValid():
             xform = UsdGeom.Xformable(prim)
             op = get_translate_op(xform)
@@ -37,8 +43,10 @@ def save_original_positions():
 
 
 def reset_products():
+    stage = get_stage()
+
     for path, pos in original_positions.items():
-        prim = stage.GetPrimAtPath(path)
+        prim = get_prim(stage, path)
         if prim.IsValid():
             xform = UsdGeom.Xformable(prim)
             op = get_translate_op(xform)
@@ -48,13 +56,16 @@ def reset_products():
 
 
 async def release_products():
+    stage = get_stage()
+    timeline = omni.timeline.get_timeline_interface()
+
     save_original_positions()
 
     for path in PRODUCTS:
         if not timeline.is_playing():
             break
 
-        prim = stage.GetPrimAtPath(path)
+        prim = get_prim(stage, path)
         if not prim.IsValid():
             continue
 
@@ -71,5 +82,6 @@ async def release_products():
 
     reset_products()
 
-
-asyncio.ensure_future(release_products())
+def start_product_spawning():
+    asyncio.ensure_future(release_products())
+    print("[INFO] Product Spawning Started")
