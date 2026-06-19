@@ -10,7 +10,7 @@ latest_rgb = None
 def start_image_capture(
     camera_path="/World/Inspector83x/rgb_camera",
     resolution=(640, 480),
-    frequency=30,
+    frequency=60,
 ):
     global camera
 
