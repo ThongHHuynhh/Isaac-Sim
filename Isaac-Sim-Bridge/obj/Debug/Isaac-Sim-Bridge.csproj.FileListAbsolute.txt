@@ -1,0 +1,12 @@
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\obj\Debug\Isaac-Sim-Bridge.csproj.AssemblyReference.cache
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\obj\Debug\Isaac-Sim-Bridge.csproj.CoreCompileInputs.cache
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\bin\Debug\Isaac-Sim-Bridge.exe.config
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\bin\Debug\Isaac-Sim-Bridge.exe
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\bin\Debug\Isaac-Sim-Bridge.pdb
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\bin\Debug\ABB.Robotics.Controllers.PC.dll
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\bin\Debug\RobotStudio.Services.RobApi.dll
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\obj\Debug\Isaac-Si.2D70E249.Up2Date
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\obj\Debug\Isaac-Sim-Bridge.exe
+C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\obj\Debug\Isaac-Sim-Bridge.pdb
