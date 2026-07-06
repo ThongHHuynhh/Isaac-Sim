@@ -1,0 +1,14 @@
+[package]
+title = "PLC OPC-UA Bridge"
+version = "0.1.0"
+category = "Simulation"
+description = "PLC OPC-UA bridge tools for Isaac Sim."
+
+[dependencies]
+"omni.kit.uiapp" = {}
+"isaacsim.core.api" = {}
+
+[[python.module]]
+name = "abi.plc_opcua"
+
+

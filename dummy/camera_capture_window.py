@@ -31,10 +31,10 @@ class CameraCaptureWindow:
         )
         self.camera.initialize()
 
-        viewport = get_active_viewport()
-        if viewport is not None:
-            viewport.camera_path = self.camera_path
-            print(f"[INFO] Viewport camera set to: {self.camera_path}")
+        # viewport = get_active_viewport()
+        # if viewport is not None:
+        #     viewport.camera_path = self.camera_path
+        #     print(f"[INFO] Viewport camera set to: {self.camera_path}")
 
         width, height = self.resolution
         self.provider = ui.ByteImageProvider()
