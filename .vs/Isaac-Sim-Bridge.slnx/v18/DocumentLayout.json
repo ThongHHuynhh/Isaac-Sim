@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Thong.Huynh\\source\\repos\\Isaac-Sim\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D967D4C9-EF61-4D8B-B927-51A42F322FE7}|Isaac-Sim-Bridge\\Isaac-Sim-Bridge.csproj|c:\\users\\thong.huynh\\source\\repos\\isaac-sim\\isaac-sim-bridge\\isaacbridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D967D4C9-EF61-4D8B-B927-51A42F322FE7}|Isaac-Sim-Bridge\\Isaac-Sim-Bridge.csproj|solutionrelative:isaac-sim-bridge\\isaacbridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D967D4C9-EF61-4D8B-B927-51A42F322FE7}|Isaac-Sim-Bridge\\Isaac-Sim-Bridge.csproj|C:\\Users\\Thong.Huynh\\source\\repos\\Isaac-Sim\\isaac-sim-bridge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D967D4C9-EF61-4D8B-B927-51A42F322FE7}|Isaac-Sim-Bridge\\Isaac-Sim-Bridge.csproj|solutionrelative:isaac-sim-bridge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D967D4C9-EF61-4D8B-B927-51A42F322FE7}|Isaac-Sim-Bridge\\Isaac-Sim-Bridge.csproj|C:\\Users\\Thong.Huynh\\source\\repos\\Isaac-Sim\\isaac-sim-bridge\\jointangleextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D967D4C9-EF61-4D8B-B927-51A42F322FE7}|Isaac-Sim-Bridge\\Isaac-Sim-Bridge.csproj|solutionrelative:isaac-sim-bridge\\jointangleextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Thong.Huynh\\source\\repos\\Isaac-Sim\\Isaac-Sim-Bridge\\Program.cs",
+              "RelativeDocumentMoniker": "Isaac-Sim-Bridge\\Program.cs",
+              "ToolTip": "C:\\Users\\Thong.Huynh\\source\\repos\\Isaac-Sim\\Isaac-Sim-Bridge\\Program.cs",
+              "RelativeToolTip": "Isaac-Sim-Bridge\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T19:29:06.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JointAngleExtractor.cs",
+              "DocumentMoniker": "C:\\Users\\Thong.Huynh\\source\\repos\\Isaac-Sim\\Isaac-Sim-Bridge\\JointAngleExtractor.cs",
+              "RelativeDocumentMoniker": "Isaac-Sim-Bridge\\JointAngleExtractor.cs",
+              "ToolTip": "C:\\Users\\Thong.Huynh\\source\\repos\\Isaac-Sim\\Isaac-Sim-Bridge\\JointAngleExtractor.cs",
+              "RelativeToolTip": "Isaac-Sim-Bridge\\JointAngleExtractor.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T19:29:19.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IsaacBridge.cs",
+              "DocumentMoniker": "C:\\Users\\Thong.Huynh\\source\\repos\\Isaac-Sim\\Isaac-Sim-Bridge\\IsaacBridge.cs",
+              "RelativeDocumentMoniker": "Isaac-Sim-Bridge\\IsaacBridge.cs",
+              "ToolTip": "C:\\Users\\Thong.Huynh\\source\\repos\\Isaac-Sim\\Isaac-Sim-Bridge\\IsaacBridge.cs",
+              "RelativeToolTip": "Isaac-Sim-Bridge\\IsaacBridge.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAYwDsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T19:29:11.965Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

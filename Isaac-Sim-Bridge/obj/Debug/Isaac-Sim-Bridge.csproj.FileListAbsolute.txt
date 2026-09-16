@@ -10,3 +10,15 @@ C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\bin\Debug\ABB.R
 C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\obj\Debug\Isaac-Si.2D70E249.Up2Date
 C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\obj\Debug\Isaac-Sim-Bridge.exe
 C:\Users\electric\source\repos\Isaac-Sim-Bridge\Isaac-Sim-Bridge\obj\Debug\Isaac-Sim-Bridge.pdb
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\bin\Debug\Isaac-Sim-Bridge.exe.config
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\bin\Debug\Isaac-Sim-Bridge.exe
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\bin\Debug\Isaac-Sim-Bridge.pdb
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\bin\Debug\ABB.Robotics.Controllers.PC.dll
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\bin\Debug\RobotStudio.Services.RobApi.dll
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\obj\Debug\Isaac-Sim-Bridge.csproj.AssemblyReference.cache
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\obj\Debug\Isaac-Sim-Bridge.csproj.CoreCompileInputs.cache
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\obj\Debug\Isaac-Si.2D70E249.Up2Date
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\obj\Debug\Isaac-Sim-Bridge.exe
+C:\Users\Thong.Huynh\source\repos\Isaac-Sim\Isaac-Sim-Bridge\obj\Debug\Isaac-Sim-Bridge.pdb
